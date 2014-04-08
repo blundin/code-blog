@@ -1,0 +1,9 @@
+name: Brian Lundin
+markdown: redcarpet
+highlighter: pygments
+description: "Articles on code, tech, design and creativity from Brian Lundin"
+url: "http://yourdomain.com"
+sass: 
+  sass_dir: scss
+  style: compressed
+exclude: ["*.sublime-*"]
