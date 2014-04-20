@@ -1,4 +1,9 @@
+# system files
+.DS_Store
+
+#jekyll & tools files
 _site
 .sass-cache
 
+#editor & dev tools files
 *.sublime-*

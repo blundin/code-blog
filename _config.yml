@@ -1,9 +1,15 @@
 name: Brian Lundin
+description: "Articles on code, tech, design and creativity from Brian Lundin"
+url: "http://code.brianlundin.com"
+
 markdown: redcarpet
 highlighter: pygments
-description: "Articles on code, tech, design and creativity from Brian Lundin"
-url: "http://code.brianlundins.com"
-sass: 
+
+sass:
   sass_dir: scss
   style: compressed
 exclude: ["*.sublime-*"]
+
+paginate: 5
+paginate_path: "page:num"
+permalink: /blog/:title.html

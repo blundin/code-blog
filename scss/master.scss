@@ -7,7 +7,16 @@ $sans-serif-font: "adelle-sans", sans-serif;
 
 $small-title-font-size: 13pt;
 $small-subtitle-font-size: 9pt;
-$small-header-link-font-size: 10pt;
+$small-header-link-font-size: 11pt;
+
+$med-title-font-size: 16pt;
+$med-subtitle-font-size: 9pt;
+$med-header-link-font-size: 11pt;
+
+
+/* Colors */
+$gray-light: #818181;
+$gray-dark: #3e3e3e;
 
 
 @import "settings";
@@ -51,76 +60,4 @@ $small-header-link-font-size: 10pt;
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
-/* Header */
-
-.site-header {
-  margin-top: 20px;
-  height: 50px;
-}
-
-.header-block {
-  text-align: left;
-  height: 50px;
-}
-
-.header-block:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -0.25em; /* Adjusts for spacing */
-}
-
-.titles-block {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.links-block {
-  display: inline-block;
-  vertical-align: bottom;
-  text-align: right;
-}
-
-.site-title {
-  font: {
-    family: $serif-font;
-    size: $small-title-font-size;
-  }
-  margin-left: 10px;
-  margin-top: 7px;
-
-  a {
-    color: #555555;
-  }
-}
-
-.site-subtitle {
-  display: inherit;
-  font: {
-    family: $serif-font;
-    size: $small-subtitle-font-size;
-  }
-  margin-left: 10px;
-}
-
-.avatar {
-  width: 50px;
-  height: 50px;
-  float: left;
-}
-
-.header-link {
-  display: inherit;
-  font: {
-    family: $sans-serif-font;
-    size: $small-header-link-font-size;
-  }
-  margin-left: 10px;
-  padding-bottom: 7px;
-}
-
-/* Content */
-.content {
-  margin-top: 35px;
-}
+@import "custom";

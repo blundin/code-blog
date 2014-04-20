@@ -1,10 +1,9 @@
 ---
 layout: page
-title: About
+title: About Brian Lundin
 ---
+Hi, my name is Brian Lundin, and I am a software developer, writer, storyteller, and geek living in Austin, Texas. I'm a technology strategist and developer at a leading hardware, software and services provider in Austin. Since graduating from Oklahoma State University with a degree in Management Information Systems in 2001, I've worked as a developer, project manager and strategist, and more.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+With experience in Ruby, Objective-C, JavaScript, C#, Java and more, I aspire to be a development polyglot, always seeking out new and interesting technologies. This blog, [code.brianlundin.com](http://code.brianlundin.com), is my place on the web to write about code, technology, and general geekery.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+I have a wide variety of interests outside of the tech world, especially writing and literature. I am passionate about Jesus, literature, writing, and telling stories of redemption in the lives of God’s people. I also blog about those topics and more at [brianlundin.com](http://brianlundin.com). I am a partner at the Austin Stone Community Church, and lead the writing team for the [Austin Stone Story Team](http://austinstone.org/stories) along with my wife Lindsey.
