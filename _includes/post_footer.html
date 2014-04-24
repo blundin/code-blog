@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="small-8 columns">
+    <a href="https://twitter.com/share?url={{ site.url | append: page.url | url_encode | downcase }}&via=blundin" target="_blank">
+      <div class="social-icon twitter-icon"></div>
+    </a>
+    <div class="social-icon appdotnet-icon"></div>
+    <div class="social-icon facebook-icon"></div>
+  </div>
+  <div class="small-8 columns right-aligned">
+    {{ page.date | date: "%b %-d, %Y" }}
+  </div>
+</div>

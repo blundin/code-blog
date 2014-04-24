@@ -8,13 +8,6 @@ layout: default
   <article class="post-content">
     {{ content }}
     <hr>
-    <div class="row">
-    <div class="small-8 columns">
-
-    </div>
-    <div class="small-8 columns right-aligned">
-      {{ page.date | date: "%b %-d, %Y" }}
-    </div>
-  </div>
+    {% include post_footer.html %}
   </article>
 </div>

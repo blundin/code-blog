@@ -93,6 +93,32 @@
   }
 }
 
+/* Post Footer */
+.social-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.twitter-icon {
+  @extend .social-icon;
+  background: url('/images/twitter.png') no-repeat 0 0;
+  @include image-2x('/images/twitter@2x.png', 22px, 22px);
+}
+
+.appdotnet-icon {
+  @extend .social-icon;
+  background: url('/images/appdotnet.png') no-repeat 0 0;
+  @include image-2x('/images/appdotnet@2x.png', 22px, 22px);
+}
+
+.facebook-icon {
+  @extend .social-icon;
+  background: url('/images/facebook.png') no-repeat 0 0;
+  @include image-2x('/images/facebook@2x.png', 22px, 22px);
+}
+
 /* Footer */
 
 #footer {
@@ -159,6 +185,10 @@ article {
     float: left;
     background: url('/images/big-avatar.png') no-repeat 0 0;
     @include image-2x('/images/big-avatar@2x.png', 70px, 70px);
+  }
+
+  .social-icon {
+    margin-right: 7px;
   }
 }
 @media #{$medium-only} { }
