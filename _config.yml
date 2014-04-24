@@ -13,3 +13,5 @@ exclude: ["*.sublime-*"]
 paginate: 5
 paginate_path: "page:num"
 permalink: /blog/:title.html
+
+exclude: ["node_modules", "Gruntfile.js", "bower.json", "package.json"]

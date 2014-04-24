@@ -1,16 +1,19 @@
 .no-left-padding{
-    padding-left: 0px;
+  padding-left: 0px;
+}
+
+.right-aligned {
+  text-align: right;
 }
 
 /* Header */
 
 .site-header {
-  margin-top: 10px;
+  margin-top: 15px;
   height: 50px;
 }
 
 .header-block {
-  text-align: left;
   height: 50px;
 }
 
@@ -63,6 +66,8 @@
   width: 50px;
   height: 50px;
   float: left;
+  background: url('/images/avatar.png') no-repeat 0 0;
+  @include image-2x('/images/avatar@2x.png', 50px, 50px);
 }
 
 .header-link {
@@ -73,6 +78,7 @@
   }
   margin-left: 7px;
   padding-bottom: 10px;
+  vertical-align: bottom;
 }
 
 /* Content */
@@ -80,16 +86,46 @@
   margin-top: 20px;
 }
 
+/* Post */
+.post-content {
+  p {
+    line-height: 1.6;
+  }
+}
+
+/* Footer */
+
+#footer {
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: $gray-lighter;
+  background-color: #f8f8f8;
+}
+
+footer {
+  height: 60px;
+}
+
 ul.footer-nav {
   text-align: center;
+  margin-right :0px;
+  margin-left: 0px;
+  margin-top: 20px;
 
   li.footer-nav-item {
     display: inline-block;
+    font-family: $sans-serif-font;
   }
 
-  .not-first {
-    margin-left: 30px;
+  .not-last {
+    margin-right: 20px;
   }
+}
+
+/* Article */
+article {
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 /* Mobile-first design, so we adjust from the small for the larger screens */
@@ -105,11 +141,24 @@ ul.footer-nav {
 
   .header-link {
     font-size: $med-header-link-font-size;
+    padding-bottom: 19px;
   }
 
   .site-header {
-    margin-top: 25px;
-    height: 50px;
+    margin-top: 30px;
+    height: 70px;
+  }
+
+  .header-block {
+    height: 70px;
+  }
+
+  .avatar {
+    width: 70px;
+    height: 70px;
+    float: left;
+    background: url('/images/big-avatar.png') no-repeat 0 0;
+    @include image-2x('/images/big-avatar@2x.png', 70px, 70px);
   }
 }
 @media #{$medium-only} { }

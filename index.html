@@ -4,11 +4,14 @@ layout: default
 <div class="row">
   <div class="small-16 columns">
       {% for post in site.posts %}
-        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-        <div class="post-body">
+        <article>
+          <header>
+            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+          </header>
           {{ post.content }}
-        </div>
-        <hr>
+          <hr>
+          {{ post.date | date: "%b %-d, %Y" }}
+      </article>
       {% endfor %}
   </div>
 </div>
