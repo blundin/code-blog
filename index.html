@@ -10,7 +10,7 @@ layout: default
           </header>
           {{ post.content }}
           <hr>
-          {{ post.date | date: "%b %-d, %Y" }}
+          {% include post_footer.html %}
       </article>
       {% endfor %}
   </div>
