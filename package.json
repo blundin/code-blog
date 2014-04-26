@@ -8,6 +8,7 @@
     "grunt-contrib-clean": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-cssmin": "*",
+    "grunt-contrib-watch": "*",
     "bower": "*",
     "grunt-exec": "*"
   }

@@ -41,10 +41,32 @@ module.exports = function(grunt) {
         cmd: 'jekyll build'
       },
       serve: {
-        cmd: 'jekyll serve --watch'
+        cmd: 'jekyll serve --watch --detach'
       },
       deploy: {
         cmd: './publish.sh'
+      }
+    },
+    watch: {
+      src: {
+        files: ['_posts/*.md',
+                '_drafts/*.md',
+                '_includes/*.html',
+                '_layouts/*.html',
+                '_plugins/*.*',
+                'about/*.*',
+                'css/*.css',
+                'css/*.scss',
+                'images/*.*',
+                'js/*.js',
+                'js/*.coffee',
+                '*.yml',
+                '*.html',
+                '*.md',
+                '*.xml'],
+        tasks: ['default'],
+        options: {
+        }
       }
     }
   });
@@ -53,7 +75,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', [ 'exec:build', 'uglify', 'cssmin', 'clean']);
+  grunt.registerTask('default', ['exec:build', 'uglify', 'cssmin', 'clean']);
+  grunt.registerTask('dev', ['exec:build', 'uglify', 'cssmin', 'clean', 'watch'])
   grunt.registerTask('deploy', [ 'default', 'exec:deploy' ]);
 };
