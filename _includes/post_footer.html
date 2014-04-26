@@ -10,11 +10,12 @@
       <div class="social-icon facebook-icon"></div>
     </a>
   </div>
-  <div class="small-8 columns right-aligned sans-serif">
-    {% if page.date %}
-      {{ page.date | date: "%b %-d, %Y" }}
-    {% else %}
-      {{ post.date | date: "%b %-d, %Y" }}
-    {% endif %}
+  <div class="small-8 columns right-aligned sans-serif post-footer-text">
+    <div>
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        By <span itemprop="name">Brian Lundin</span>
+      </span>
+    </div>
+    <div class="post-footer-text" {% if page.date %}itemprop="datePublished" content="{{ page.date | date: '%Y-%m-%d' }}" {% endif %}>{% if page.date %}{{ page.date | date: "%b %-d, %Y" }}{% else %}{{ post.date | date: "%b %-d, %Y" }}{% endif %}</div>
   </div>
 </div>
