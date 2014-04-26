@@ -2,33 +2,58 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    sass: {
-      options: {
-        includePaths: ['bower_components/foundation/scss']
-      },
-      dist: {
-        options: {
-          outputStyle: 'compressed'
-        },
+    clean: {
+      javascript: ['_site/js/*.js', '!_site/js/*.min.js'],
+      modernizr: ['_site/bower_components/modernizr/modernizr.js'],
+      css: ['_site/css/*.css', '!_site/css/*.min.css']
+    },
+    uglify: {
+      modernizr: {
         files: {
-          'css/app.css': 'scss/app.scss'
-        }        
+          '_site/bower_components/modernizr/modernizr.min.js': ['_site/bower_components/modernizr/modernizr.js']
+        }
+      },
+      app: {
+      // Grunt will search for "**/*.js" under "lib/" when the "uglify" task
+      // runs and build the appropriate src-dest file mappings then, so you
+      // don't need to update the Gruntfile when files are added or removed.
+        files: [
+          {
+            expand: true,     // Enable dynamic expansion.
+            src: ['_site/js/*.js'], // Actual pattern(s) to match.
+            ext: '.min.js',   // Dest filepaths will have this extension.
+            extDot: 'first'   // Extensions in filenames begin after the first dot
+          }
+        ]
       }
     },
-
-    watch: {
-      grunt: { files: ['Gruntfile.js'] },
-
-      sass: {
-        files: 'scss/**/*.scss',
-        tasks: ['sass']
+    cssmin: {
+      minify: {
+        expand: true,
+        cwd: '_site/css/',
+        src: ['*.css', '!*.min.css'],
+        dest: '_site/css/',
+        ext: '.min.css'
+      }
+    },
+    exec: {
+      build: {
+        cmd: 'jekyll build'
+      },
+      serve: {
+        cmd: 'jekyll serve --watch'
+      },
+      deploy: {
+        cmd: './publish.sh'
       }
     }
   });
 
-  grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-exec');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-  grunt.registerTask('build', ['sass']);
-  grunt.registerTask('default', ['build','watch']);
-}
+  grunt.registerTask('default', [ 'exec:build', 'uglify', 'cssmin', 'clean']);
+  grunt.registerTask('deploy', [ 'default', 'exec:deploy' ]);
+};

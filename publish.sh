@@ -58,9 +58,9 @@ function yellow() {
 # 	green 'Deploying to staging bucket'
 # fi
 
-
-red '--> Running Jekyll'
-Jekyll build
+# Don't need to do this. Run 'grunt deploy' to kick off this script
+# red '--> Running Jekyll'
+# Jekyll build
 
 
 red '--> Gzipping all html, css and js files'

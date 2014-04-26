@@ -6,7 +6,7 @@ markdown: redcarpet
 highlighter: pygments
 
 sass:
-  sass_dir: scss
+  sass_dir: css
   style: compressed
 
 paginate: 5
