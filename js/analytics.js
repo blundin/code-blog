@@ -5,3 +5,5 @@
 
 ga('create', 'UA-23811519-3', 'brianlundin.com');
 ga('send', 'pageview');
+ga('require', 'linkid', 'linkid.js');
+ga('require', 'displayfeatures');
