@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Craft brewing vs. enterprise software development
+date: 2014-04-27
 ---
 This weekend my wife and I celebrated the birthday of a great friend at the [Jester King brewery](http://jesterkingbrewery.com) outside of Austin. It was a beautiful day, one of those days that tempts you to sell everything to buy land out in the Hill Country. Close friends, a beautiful scene, and amazing beer. But it was more—it was also an inspiring day.
 
