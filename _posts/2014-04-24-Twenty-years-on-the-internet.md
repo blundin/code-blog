@@ -2,6 +2,7 @@
 layout: post
 title: Twenty years on the internet
 date: 2014-04-24
+description: This blog is my newest contribution to the internet, founded with the goal of getting back to my first tech love, writing code. I will cover more ground than that of course, but my foucs is software, and other things software developers think about. My other blog covers my other loves, writing and storytelling, and I found that I couldn't touch on everything I wanted there, so I did what I love... fired up a text editor and started writing some HTML. 
 ---
 Twenty years ago I fell in love with the internet. I was a sophomore in high school, and only just beginning to figure out the social niceities that it takes to survive in that environment. The first PC in our home was a Packard Bell with a Pentium 75 MHz processor and some miniscule amount of RAM. It was not the fastest, even for the time, but it ran Castle Wolfenstein, Doom, Warcraft and Descent, so I was happy.
 
