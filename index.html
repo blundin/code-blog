@@ -8,11 +8,18 @@ description: Articles on code, tech, design and creativity from Brian Lundin
       {% for post in paginator.posts %}
         <article>
           <header>
-            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            <h1>
+              {% if post.link %}
+                <a href="{{ post.link }}">&#65515;&nbsp;{{ post.title }}</a>
+              {% else %}
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              {% endif %}
+            </h1>
           </header>
           <div class="post-content">
             {{ post.content }}
           </div>
+          {% if post.link %}<a href="{{ post.url }}" title="Permalink"><i class="fa fa-link"></i></a>{% endif %}
           <hr>
           {% include post_footer.html %}
       </article>
