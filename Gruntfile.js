@@ -5,12 +5,18 @@ module.exports = function(grunt) {
     clean: {
       javascript: ['_site/js/*.js', '!_site/js/*.min.js'],
       modernizr: ['_site/bower_components/modernizr/modernizr.js'],
+      html5shiv: ['_site/bower_components/html5shiv/dist/html5shiv.js'],
       css: ['_site/css/*.css', '!_site/css/*.min.css']
     },
     uglify: {
       modernizr: {
         files: {
           '_site/bower_components/modernizr/modernizr.min.js': ['_site/bower_components/modernizr/modernizr.js']
+        }
+      },
+      html5shiv: {
+        files: {
+          '/bower_components/html5shiv/dist/html5shiv.js': ['_site/bower_components/html5shiv/dist/html5shiv.min.js']
         }
       },
       app: {
