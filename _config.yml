@@ -3,7 +3,7 @@ description: "Articles on code, tech, design and creativity from Brian Lundin"
 url: "http://code.brianlundin.com"
 cdn: "http://cdn.brianlundin.com"
 
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 
 sass:
