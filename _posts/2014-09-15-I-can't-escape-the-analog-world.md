@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: I can't escape the analog world
 date: 2014-09-15
 description: I haven't sent a letter in the mail in over a decade. All of my to-dos and calendars are digital. And yet, I can't escape the analog world of pen and paper.
 ---
