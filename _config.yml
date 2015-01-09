@@ -1,7 +1,8 @@
 name: Brian Lundin
 description: "Articles on code, tech, design and creativity from Brian Lundin"
+
 url: "http://code.brianlundin.com"
-cdn: "http://cdn.brianlundin.com"
+cdn: "http://cdn.code.brianlundin.com"
 
 markdown: kramdown
 highlighter: pygments

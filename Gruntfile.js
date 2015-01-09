@@ -3,7 +3,6 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     clean: {
-      javascript: ['_site/js/*.js', '!_site/js/*.min.js'],
       modernizr: ['_site/bower_components/modernizr/modernizr.js'],
       html5shiv: ['_site/bower_components/html5shiv/dist/html5shiv.js'],
       css: ['_site/css/*.css', '!_site/css/*.min.css']
