@@ -70,8 +70,8 @@
   width: 50px;
   height: 50px;
   float: left;
-  background: url('http://cdn.brianlundin.com/images/avatar.png') no-repeat 0 0;
-  @include image-2x('http://cdn.brianlundin.com/images/avatar@2x.png', 50px, 50px);
+  background: url('http://cdn.code.brianlundin.com/images/avatar.png') no-repeat 0 0;
+  @include image-2x('http://cdn.code.brianlundin.com/images/avatar@2x.png', 50px, 50px);
 }
 
 .header-link {
@@ -123,20 +123,20 @@
 
 .twitter-icon {
   @extend .social-icon;
-  background: url('http://cdn.brianlundin.com/images/twitter.png') no-repeat 0 0;
-  @include image-2x('http://cdn.brianlundin.com/images/twitter@2x.png', 22px, 22px);
+  background: url('http://cdn.code.brianlundin.com/images/twitter.png') no-repeat 0 0;
+  @include image-2x('http://cdn.code.brianlundin.com/images/twitter@2x.png', 22px, 22px);
 }
 
 .appdotnet-icon {
   @extend .social-icon;
-  background: url('http://cdn.brianlundin.com/images/appdotnet.png') no-repeat 0 0;
-  @include image-2x('http://cdn.brianlundin.com/images/appdotnet@2x.png', 22px, 22px);
+  background: url('http://cdn.code.brianlundin.com/images/appdotnet.png') no-repeat 0 0;
+  @include image-2x('http://cdn.code.brianlundin.com/images/appdotnet@2x.png', 22px, 22px);
 }
 
 .facebook-icon {
   @extend .social-icon;
-  background: url('http://cdn.brianlundin.com/images/facebook.png') no-repeat 0 0;
-  @include image-2x('http://cdn.brianlundin.com/images/facebook@2x.png', 22px, 22px);
+  background: url('http://cdn.code.brianlundin.com/images/facebook.png') no-repeat 0 0;
+  @include image-2x('http://cdn.code.brianlundin.com/images/facebook@2x.png', 22px, 22px);
 }
 
 /* Footer */
@@ -203,8 +203,8 @@ article {
     width: 70px;
     height: 70px;
     float: left;
-    background: url('http://cdn.brianlundin.com/images/big-avatar.png') no-repeat 0 0;
-    @include image-2x('http://cdn.brianlundin.com/images/big-avatar@2x.png', 70px, 70px);
+    background: url('http://cdn.code.brianlundin.com/images/big-avatar.png') no-repeat 0 0;
+    @include image-2x('http://cdn.code.brianlundin.com/images/big-avatar@2x.png', 70px, 70px);
   }
 
   .social-icon {
