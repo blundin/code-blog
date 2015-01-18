@@ -1,0 +1,28 @@
+---
+# This is just to make sure Jekyll processes this file
+---
+
+/* Typography */
+$serif-font: serif;
+$sans-serif-font: "lato", sans-serif;
+
+$small-title-font-size: 13pt;
+$small-subtitle-font-size: 9pt;
+$small-header-link-font-size: 11pt;
+
+$med-title-font-size: 16pt;
+$med-subtitle-font-size: 9pt;
+$med-header-link-font-size: 11pt;
+
+
+/* Colors */
+$gray-light: #818181;
+$gray-lighter: lighten($gray-light, 30%);
+$gray-dark: #3e3e3e;
+
+
+@import "qg_settings";
+@import "../bower_components/foundation/scss/foundation";
+@import "mixins";
+
+@import "qg_custom";

@@ -1,0 +1,17 @@
+<head>
+  <meta charset="utf-8">
+  <!--[if lt IE 9]>
+  <script src="/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+  <![endif]-->
+  <script src="//use.typekit.net/ozi0kon.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <script async src="/bower_components/modernizr/modernizr.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
+  <!--<link rel="stylesheet" href="{{ '/css/master.min.css' | cdn }}">-->
+  <link rel="stylesheet" href="/css/quickgrades.min.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+</head>

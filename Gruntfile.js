@@ -15,7 +15,7 @@ module.exports = function(grunt) {
       },
       html5shiv: {
         files: {
-          '/bower_components/html5shiv/dist/html5shiv.js': ['_site/bower_components/html5shiv/dist/html5shiv.min.js']
+          '_site/bower_components/html5shiv/dist/html5shiv.min.js': ['/bower_components/html5shiv/dist/html5shiv.js']
         }
       },
       app: {
@@ -60,6 +60,7 @@ module.exports = function(grunt) {
                 '_layouts/*.html',
                 '_plugins/*.*',
                 'about/*.*',
+                'apps/**/*.*',
                 'css/*.css',
                 'css/*.scss',
                 'images/*.*',
@@ -82,7 +83,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['exec:build', 'uglify', 'cssmin', 'clean']);
+  grunt.registerTask('default', ['exec:build', 'uglify', 'cssmin']);
   grunt.registerTask('dev', ['exec:build', 'uglify', 'cssmin', 'clean', 'watch'])
   grunt.registerTask('deploy', ['default', 'exec:deploy']);
 };

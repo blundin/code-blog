@@ -8,7 +8,7 @@ markdown: kramdown
 highlighter: pygments
 
 sass:
-  sass_dir: css
+  sass_dir: _sass
   style: compressed
 
 paginate: 5
