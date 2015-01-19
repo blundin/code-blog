@@ -128,11 +128,11 @@ $header-font-color: $gray-dark;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-$h1-font-size: rem-calc(60);
+$h1-font-size: rem-calc(50);
 // $h2-font-size: rem-calc(37);
-// $h3-font-size: rem-calc(27);
+$h3-font-size: rem-calc(30);
 $h4-font-size: rem-calc(25);
-$h5-font-size: rem-calc(16);
+$h5-font-size: rem-calc(19);
 // $h6-font-size: rem-calc(16);
 
 // These control how subheaders are styled.
@@ -149,7 +149,7 @@ $subheader-font-weight: 300;
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 $paragraph-font-weight: 300;
-// $paragraph-font-size: 1rem;
+$paragraph-font-size: 1rem;
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
@@ -222,12 +222,12 @@ $paragraph-font-weight: 300;
 // $include-html-accordion-classes: $include-html-classes;
 
 // $accordion-navigation-padding: rem-calc(16);
-// $accordion-navigation-bg-color: #efefef  ;
+$accordion-navigation-bg-color: #efefef  ;
 // $accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%);
 // $accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%);
 // $accordion-navigation-font-color: #222;
 // $accordion-navigation-font-size: rem-calc(16);
-// $accordion-navigation-font-family: $body-font-family;
+$accordion-navigation-font-family: $body-font-family;
 
 // $accordion-content-padding: $column-gutter/2;
 // $accordion-content-active-bg-color: #fff;

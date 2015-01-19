@@ -63,6 +63,7 @@ module.exports = function(grunt) {
                 'apps/**/*.*',
                 'css/*.css',
                 'css/*.scss',
+                '_sass/*.scss',
                 'images/*.*',
                 'js/*.js',
                 'js/*.coffee',

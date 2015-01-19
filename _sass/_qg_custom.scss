@@ -11,6 +11,10 @@
   padding-top: 75px;
 }
 
+.medium-padding-top {
+  padding-top: 40px;
+}
+
 .medium-text-title-column {
   padding-top: 50px;
 }
@@ -21,4 +25,18 @@
 
 .footer {
   padding-bottom: 30px;
+}
+
+.app-store-badge {
+  padding: 30px;
+  margin: 0px;
+}
+
+.faq {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.faq-list {
+  font-family: $sans-serif-font;
 }
