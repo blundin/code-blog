@@ -15,6 +15,9 @@ paginate: 5
 paginate_path: "page:num"
 permalink: blog/:title.html
 
+gems: 
+ - jekyll-redirect-from
+
 exclude: ["node_modules",
           "Gruntfile.js",
           "bower.json",
