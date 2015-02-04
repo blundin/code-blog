@@ -2,6 +2,10 @@
   padding-left: 0px;
 }
 
+.no-right-padding{
+  padding-right: 0px;
+}
+
 .right-aligned {
   text-align: right;
 }
@@ -187,7 +191,6 @@ article {
 
   .header-link {
     font-size: $med-header-link-font-size;
-    padding-bottom: 19px;
   }
 
   .site-header {
@@ -211,4 +214,14 @@ article {
     margin-right: 7px;
   }
 }
-@media #{$medium-only} { }
+@media #{$medium-only} {
+  .links-block {
+     margin-bottom: 5px;
+  }
+}
+
+@media #{$large-up} {
+    .header-link {
+    font-size: $large-header-link-font-size;
+  }
+}

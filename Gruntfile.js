@@ -83,6 +83,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-bower-clean');
 
   grunt.registerTask('default', ['exec:build', 'uglify', 'cssmin']);
   grunt.registerTask('dev', ['exec:build', 'uglify', 'cssmin', 'clean', 'watch'])

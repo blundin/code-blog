@@ -44,14 +44,14 @@
 .iphone-image-small {
   width: 317px;
   height: 300px;
-  background: url('/images/Quick-Grades-Mobile.png') no-repeat 0 0;
-  @include image-2x('/images/Quick-Grades-Mobile@2x.png', 317px, 300px);
+  background: url('http://cdn.code.brianlundin.com/images/Quick-Grades-Mobile.png') no-repeat 0 0;
+  @include image-2x('http://cdn.code.brianlundin.com/images/Quick-Grades-Mobile@2x.png', 317px, 300px);
 }
 
 .iphone-image {
   width: 328px;
   height: 600px;
   // float: left;
-  background: url('/images/Quick-Grades-Desktop.png') no-repeat 0 0;
-  @include image-2x('/images/Quick-Grades-Desktop@2x.png', 328px, 600px);
+  background: url('http://cdn.code.brianlundin.com/images/Quick-Grades-Desktop.png') no-repeat 0 0;
+  @include image-2x('http://cdn.code.brianlundin.com/images/Quick-Grades-Desktop@2x.png', 328px, 600px);
 }

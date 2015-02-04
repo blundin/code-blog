@@ -3,7 +3,13 @@
   "dependencies": {
     "foundation": "zurb/bower-foundation"
   },
-  "devDependencies": {
-    "html5shiv": "~3.7.2"
+  "dependenciesIgnore": {
+    "fastclick": ["**/!(js)", "**/!(json)", "**/!(map)"],
+    "foundation": ["**/!(js)", "**/!(json)", "**/!(css)", "**/!(scss)", "**/!(map)"],
+    "html5shiv": ["**/!(js)", "**/!(json)", "**/!(map)"],
+    "jquery": ["**/!(js)", "**/!(json)", "**/!(map)"],
+    "jquery-placeholder": ["**/!(js)", "**/!(json)", "**/!(map)"],
+    "jquery.cokkie": ["**/!(js)", "**/!(json)", "**/!(map)"],
+    "modernizr": ["**/!(js)", "**/!(json)", "**/!(map)"]
   }
 }
