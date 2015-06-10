@@ -3,9 +3,10 @@
     <a href="https://twitter.com/share?url={{ site.url | append: page.url | url_encode | downcase }}&via=blundin" target="_blank">
       <div class="social-icon twitter-icon"></div>
     </a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url | append: page.url | url_encode | downcase }}" target="_blank">
+    <!-- Facebook sharing is not working. It does not pass through the right URL. -->
+    <!--<a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url | append: page.url | url_encode | downcase }}" target="_blank">
       <div class="social-icon facebook-icon"></div>
-    </a>
+    </a>-->
   </div>
   <div class="small-8 columns right-aligned sans-serif post-footer-text">
     {% if page.date %}
