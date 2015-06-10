@@ -11,7 +11,7 @@
 }
 
 .sans-serif {
-  //font-family: $sans-serif-font;
+  font-family: $sans-serif-font;
 }
 
 /* Header */
@@ -116,6 +116,12 @@
 /* Post Footer */
 .post-footer-text {
   line-height: 1.2;
+}
+
+/* Post images */
+.post-image {
+  margin: 0px;
+  padding-bottom: 15px;
 }
 
 .social-icon {
