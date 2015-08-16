@@ -87,5 +87,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['exec:build', 'uglify', 'cssmin']);
   grunt.registerTask('dev', ['exec:build', 'uglify', 'cssmin', 'clean', 'watch'])
-  grunt.registerTask('deploy', ['default', 'exec:deploy']);
+  grunt.registerTask('deploy', ['default', 'clean', 'exec:deploy']);
 };
