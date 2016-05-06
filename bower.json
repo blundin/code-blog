@@ -1,7 +1,8 @@
 {
   "name": "code-blog",
+  "homepage": "http://code.brianlundin.com",
   "dependencies": {
-    "foundation": "zurb/bower-foundation"
+    "foundation": "~5.5.3"
   },
   "dependenciesIgnore": {
     "fastclick": ["**/!(js)", "**/!(json)", "**/!(map)"],
