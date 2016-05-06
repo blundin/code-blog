@@ -8,16 +8,6 @@ module.exports = function(grunt) {
       css: ['_site/css/*.css', '!_site/css/*.min.css']
     },
     uglify: {
-      modernizr: {
-        files: {
-          '_site/bower_components/modernizr/modernizr.min.js': ['_site/bower_components/modernizr/modernizr.js']
-        }
-      },
-      html5shiv: {
-        files: {
-          '_site/bower_components/html5shiv/dist/html5shiv.min.js': ['/bower_components/html5shiv/dist/html5shiv.js']
-        }
-      },
       app: {
       // Grunt will search for "**/*.js" under "lib/" when the "uglify" task
       // runs and build the appropriate src-dest file mappings then, so you
@@ -43,7 +33,7 @@ module.exports = function(grunt) {
     },
     exec: {
       build: {
-        cmd: 'jekyll build'
+        cmd: 'jekyll build --drafts'
       },
       serve: {
         cmd: 'jekyll serve --watch --detach'
@@ -87,5 +77,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['exec:build', 'uglify', 'cssmin']);
   grunt.registerTask('dev', ['exec:build', 'uglify', 'cssmin', 'clean', 'watch'])
-  grunt.registerTask('deploy', ['default', 'clean', 'exec:deploy']);
+  grunt.registerTask('deploy', ['default', 'exec:deploy']);
 };

@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "devDependencies": {
     "bower": "*",
-    "grunt": "~0.4.1",
-    "grunt-bower-clean": "^0.2.2",
+    "grunt": "*",
+    "grunt-bower-clean": "*",
     "grunt-contrib-clean": "*",
     "grunt-contrib-cssmin": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
     "grunt-exec": "*",
-    "grunt-sass": "~0.8.0",
-    "node-sass": "~0.7.0"
+    "grunt-sass": "*",
+    "node-sass": "*"
   }
 }

@@ -26,7 +26,6 @@ function yellow() {
 red '--> Gzipping all html, css and js files'
 find $DIR \( -iname '*.html' -o -iname '*.css' -o -iname '*.js' \) -exec gzip -9 -n {} \; -exec mv {}.gz {} \;
 
-
 yellow '--> Uploading css files'
 aws s3 sync $DIR s3://$BUCKET/ --exclude '*.*' --include '*.css' --content-type 'text/css' --cache-control 'max-age=604800' --content-encoding 'gzip' --size-only --profile "$PROFILE"
 
@@ -39,7 +38,7 @@ aws s3 sync $DIR s3://$BUCKET/ --exclude '*.*' --include '*.jpg' --include '*.pn
 
 # Sync html files (Cache: 2 hours)
 yellow '--> Uploading html files'
-aws s3 sync $DIR s3://$BUCKET/ --exclude '*.*' --include '*.html' --content-type 'text/html' --cache-control 'max-age=604800' --content-encoding 'gzip' --size-only 
+aws s3 sync $DIR s3://$BUCKET/ --exclude '*.*' --include '*.html' --content-type 'text/html' --cache-control 'max-age=604800' --content-encoding 'gzip' --size-only --profile "$PROFILE"
 
 # # Sync everything else
 yellow '--> Syncing everything else'
